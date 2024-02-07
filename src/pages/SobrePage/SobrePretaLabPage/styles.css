@@ -1,0 +1,75 @@
+.sobrePretaLabContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+}
+
+
+.sobrePretaLabText {
+  text-align: justify;
+  line-height: 1.5;
+  padding: 15px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+}
+
+.sobrePretaLabImageList {
+  width: 99%;
+  height: 400px;
+  margin: 0px 20px 15px 5px;
+
+}
+
+.sobrePretaLabImage {
+  position: relative;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;  
+  margin: auto;
+
+}
+
+.sobrePretaLabImage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.sobrePretaLabImage:hover {
+  filter: brightness(1.2) contrast(1.2) saturate(1.5) hue-rotate(270deg) grayscale(100%);
+  transform: scale(1.02);
+}
+
+.sobrePretaLabContainer p {
+  margin-bottom: 20px;
+  text-align: justify;
+  line-height: 1.5;
+  padding: 30px;
+  background-color: #993399;
+  border-radius: 40px 15px;
+}
+
+.sobrePretaLabTopImage {
+  width: 80%; 
+  height: auto; 
+  border-radius: 15px; 
+  transition: transform 0.3s ease-in-out;
+  margin: 10px 20px 10px 50px;
+
+}
+
+.sobrePretaLabTopImage:hover {
+  filter: brightness(1.2) contrast(1.2) saturate(1.5) hue-rotate(270deg) grayscale(100%);
+  transform: scale(1.05);
+}

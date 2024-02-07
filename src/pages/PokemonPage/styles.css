@@ -1,0 +1,25 @@
+.pokemon-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 5px;
+  }
+
+  .loading-text {
+    position: fixed;
+    top: 71%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #AB52C5;
+    animation: scaleUpDown 1.5s infinite alternate; 
+  }
+  
+  @keyframes scaleUpDown {
+    from {
+      transform: scale(1); 
+    }
+    to {
+      transform: scale(1.2); 
+  }}

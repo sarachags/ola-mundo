@@ -1,0 +1,45 @@
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: calc(100vh - 350px)
+    
+
+  }
+  
+  .link {
+    display: flex;
+    width: 50vw;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    height: calc(100vh - 450px);
+    margin: 50px;
+    border-radius: 20px 40px;
+
+  }
+  
+  .link:first-child {
+    background-image: url('https://inovasocial.com.br/wp-content/uploads/2023/04/se-candidate-mulher-adas-inovacao-social-mulheres-tech-tecnologia-programacao-inovasocial-01.jpg');
+    background-size: cover;
+    background-position: center;
+    
+
+  }
+  .link:last-child {
+    background-image: url('/preta.png');
+    background-size: cover;
+    background-position: center;
+
+  }
+  
+  .link p {
+    color: #ffffff;
+    font-size: 20px;
+  }
+  
+  .link:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease;     
+  }

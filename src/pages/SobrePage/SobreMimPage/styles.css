@@ -1,0 +1,81 @@
+.sobre-mim-container {
+  margin: 30px;
+}
+
+.sobre-mim-container .perfil {
+  text-align: justify;
+  margin-bottom: 5px;
+}
+
+.sobre-mim-container .perfil .MuiAvatar-root {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+  border: 4px solid #993399; 
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sobre-mim-container .perfil .MuiAvatar-root::before {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  background-color: rgba(60, 20, 60, 0.2); 
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.sobre-mim-container .perfil .MuiAvatar-root:hover::before {
+  opacity: 1;
+}
+
+.sobre-mim-container .contatos .MuiCard-root {
+  padding: 9px;
+}
+
+
+.sobre-mim-container .habilidades .MuiCard-root {
+  background-color: #993399;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sobre-mim-container .bloco-1 .MuiCard-root {
+  background-color: #FE5722;  
+}
+
+.sobre-mim-container .bloco-2 .MuiCard-root {
+  background-color: #244DE3;  
+}
+
+.sobre-mim-container .bloco-3 .MuiCard-root {
+  background-color: #DAB92C;
+}
+
+.sobre-mim-container .bloco-4 .MuiCard-root {
+  background-color: #66D6FD;
+}
+
+.sobre-mim-container .bloco-1 .MuiCardContent-root,
+.sobre-mim-container .bloco-2 .MuiCardContent-root,
+.sobre-mim-container .bloco-3 .MuiCardContent-root,
+.sobre-mim-container .bloco-4 .MuiCardContent-root {
+  padding: 30px;
+  color: white;
+}
+
+.sobre-mim-container .bloco-1 .MuiCard-root:hover,
+.sobre-mim-container .bloco-2 .MuiCard-root:hover,
+.sobre-mim-container .bloco-3 .MuiCard-root:hover,
+.sobre-mim-container .bloco-4 .MuiCard-root:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  background-color: #993399; 
+  transition: background-color 0.3s ease; 
+}
